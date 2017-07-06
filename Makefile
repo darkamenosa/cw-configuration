@@ -7,7 +7,7 @@ build:
 	./gradlew build
 
 release:
-	docker build -t cw-configuration .
+	docker build -t tuyenhx/cw-configuration .
 
 clean:
 	echo "Clean up environment"
