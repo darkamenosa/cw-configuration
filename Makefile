@@ -1,3 +1,5 @@
+REPO_NAME := cw-configuration
+
 .PHONY: test build release clean
 
 test:
@@ -11,3 +13,4 @@ release:
 
 clean:
 	echo "Clean up environment"
+	docker images -q -f dangling=true -f label=application=$(REPO_NAME) | xargs -I ARGS docker rmi -f ARGS

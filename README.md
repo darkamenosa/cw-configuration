@@ -1,3 +1,4 @@
 # cw-configuration
 
-Testing docker hub automation build
+Testing docker hub automation build.
+
